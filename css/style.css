@@ -31,11 +31,12 @@
 }
 
 @font-face {
-  font-family: 'grotteregular';
-  src: url('../fonts/grotte-regular-webfont.woff2') format('woff2'),
-    url('../fonts/grotte-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'savoyregular';
+    src: url('../fonts/savoy_regular-webfont.woff2') format('woff2'),
+         url('../fonts/savoy_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 *, *:before, *:after {
@@ -134,11 +135,13 @@ h1 span {
 }
 
 .intro {
-  font-family: 'grotteregular';
-  font-size: 2em;
-  transform: translate(5em, -14em);
-  width: 90%;
-  letter-spacing: .01em;
+  font-family: 'savoyregular',serif;
+  font-size: 1.8em;
+  transform: translate(5.5em, -15em);
+  width: 85%;
+  letter-spacing: .05em;
+  line-height: 137%;
+  color:#696969;
 }
 
 /* button */
@@ -607,7 +610,7 @@ h2:before {
   text-transform: lowercase;
   letter-spacing: 1px;
   color: #828282;
-  font-family: 'grotteregular';
+  font-family: 'savoyregular',serif;
 }
 
 .details:before {
@@ -649,7 +652,7 @@ h2:before {
   position: relative;
   height: 800px;
   font-size: 2rem;
-  font-family: 'grotteregular', sans-serif;
+  font-family: 'savoyregular', sans-serif;
   padding: 5rem;
   line-height: 140%;
   z-index: 20;
@@ -724,10 +727,11 @@ h3 {
 }
 
 #con-left p {
-  font-size: 2rem;
-  font-family: 'grotteregular', sans-serif;
-  color: #444;
-  line-height: 130%;
+  font-size: 1.8rem;
+  font-family: 'savoyregular', sans-serif;
+  color: #696969;
+  line-height: 137%;
+  letter-spacing: .07rem;
 }
 
 #con-left p:first-of-type {
@@ -754,6 +758,7 @@ label {
   font-size: 1.5rem;
   font-family: 'BwModelica', sans-serif;
   text-transform: uppercase;
+  color:#696969;
 }
 
 input {
