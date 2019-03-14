@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
   <title>My skills</title>
 </head>
 
@@ -33,9 +35,19 @@
   </nav>
 
 
-  <h2 class="toolsheading">SKILLS</h2>
+
   <div class="flexwrapper">
-    <img src="images/tools.png" alt="image">
+
+    <div class="imgcontainer">
+    <img src="images/tools.png" class="tools" alt="image">
+  </div>
+  <div class="rightpart">
+  <h2 class="toolsheading">
+     <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">SKILLS</span>
+  </span>
+</h2>
     <ul class="wrapper">
       <li class="tool">PHOTOSHOP</li>
       <li class="tool">ADOBE ILLUSTRATOR</li>
@@ -51,8 +63,10 @@
       <li class="tool">SCSS</li>
     </ul>
   </div>
+  </div>
 
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 
 </html>
