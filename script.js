@@ -78,35 +78,6 @@ $(document).ready(function() {
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.toolsheading .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 800
-  })
-  .add({
-    targets: '.toolsheading .line',
-    translateX: [0,$(".toolsheading .letters").width()],
-    easing: "easeOutExpo",
-    duration: 800,
-    delay: 100
-  }).add({
-    targets: '.toolsheading .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: function(el, i) {
-      return 34 * (i+1)
-    }
-  }).add({
-    targets: '.toolsheading',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+
 
 });
