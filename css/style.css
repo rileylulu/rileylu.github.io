@@ -48,11 +48,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 768px) {
-  html {
-  font-size: 60%;
-  }
-}
+
 
 
 body {
@@ -96,7 +92,7 @@ margin-top: 60px;
 
 .social {
   float: right;
-margin:15% auto;
+margin:130px auto;
   /* padding-top: 15em; */
   display: flex;
   flex-direction: column;
@@ -118,6 +114,9 @@ margin:15% auto;
   font-weight: normal;
   letter-spacing: .1em;
 }
+
+
+
 
 .flexwrapperhero {
   display: flex;
@@ -147,7 +146,47 @@ justify-content: center;
   }
 }
 
+@media screen and (max-width: 779px) {
+  .flexwrapperhero {
+    transform: translateY(-80%);
 
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .flexwrapperhero {
+    transform: translateY(-290px);
+
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .flexwrapperhero {
+    transform: translateY(-250px);
+
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .flexwrapperhero {
+    transform: translateY(-100%);
+
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .flexwrapperhero {
+    transform: translateY(-120%);
+
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .flexwrapperhero {
+    transform: translateY(-200%);
+
+  }
+}
 
 #headline {
   text-align: center;
@@ -173,7 +212,7 @@ h1 {
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 3.5em;
-    margin-left: 6%;
+    margin-left: 2%;
   }
 }
 
@@ -181,6 +220,7 @@ h1 {
   h1 {
     font-size: 2.5em;
     margin-left: 5%;
+
   }}
 
   @media screen and (max-width: 670px) {
@@ -254,9 +294,9 @@ margin-left: 7%;
     width:95%;
   }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
   .intro {
-    width:75%;
+    width:80%;
     margin-left: 15%;
   }
 }
@@ -377,6 +417,9 @@ margin-left: 7%;
   z-index: 888;
   animation: 2s fadeInNav ease;
 }
+
+
+
 
 @keyframes fadeInNav {
   0% {
