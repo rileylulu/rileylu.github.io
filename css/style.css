@@ -63,6 +63,14 @@ body {
   height:auto;
 }
 
+.hero {
+  display:flex;
+  flex-direction: row;
+}
+
+header {
+  width:90%;
+}
 @media screen and (max-width: 670px) {
   .logo {
 width:15rem;
@@ -78,7 +86,7 @@ width:15rem;
 .bgimg {
   /* position:absolute; */
   float: left;
-  width: 85%;
+  width: 95%;
   height: auto;
   transform: translateY(-3em);
 }
@@ -90,24 +98,40 @@ margin-top: 60px;
   }
 }
 
+@media screen and (max-width: 670px) {
+  .bgimg{
+display:none;
+
+  }
+.mobileimg {
+  display: block;
+max-width: 100%;
+height:auto;
+}
+}
+
 .social {
   float: right;
 margin:130px auto;
   /* padding-top: 15em; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
 
 }
+@media screen and (max-width: 670px) {
+  .social{
+margin:100px auto;
+position: relative;
 
-
+}}
 
 .social-media {
   display: block;
   writing-mode: vertical-rl;
   text-decoration: none;
-  padding-right: 5em;
-  margin-bottom: 4em;
+
+margin-bottom: 5em;
   font-size: 1.3em;
   color: #000000;
   font-family: 'BwModelica', sans-serif;
@@ -116,12 +140,13 @@ margin:130px auto;
 }
 
 
+
+
 @media screen and (max-width: 670px) {
-.social-media {
-font-size: 1em;
-padding-right: 3em;
-  }
-}
+  .social-media{
+margin-bottom: 2.5em;
+
+}}
 
 
 
@@ -144,15 +169,21 @@ top:-250px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 838px) {
   .flexwrapperhero {
   top: -260px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .flexwrapperhero {
+  top: -300px;
+  }
+}
+
 @media screen and (max-width: 670px) {
   .flexwrapperhero {
-top:-150px;
+top:0;
   }
 }
 
@@ -161,11 +192,7 @@ top:-150px;
 top:-200px;
   }
 }
-@media screen and (max-width: 550px) {
-  .flexwrapperhero {
-top:-250px;
-  }
-}
+
 
 
 #headline {
@@ -188,7 +215,7 @@ h1 {
 @media screen and (max-width: 950px) {
   h1 {
     font-size: 3.5em;
-    margin-left: 50px;
+    margin-left: 30px;
 
   }}
 
@@ -324,21 +351,21 @@ margin-left: 75px;
   z-index: 99;
   border: 1px solid #000;
   white-space: nowrap;
-  margin-left: 43%;
+  margin-left: 40%;
 
 }
 
 @media screen and (max-width: 1240px) {
   .button {
     width: 20%;
-    margin-left: 45%;
+    margin-left: 40%;
   }
 }
 
 @media screen and (max-width: 940px) {
   .button {
     width: 25%;
-    margin-left: 40%;
+    margin-left: 35%;
   }
 }
 @media screen and (max-width: 740px) {
@@ -417,7 +444,7 @@ margin-left: 75px;
 
 /* navigation */
 .mainnav {
- right:45px;
+ right:3%;
   height: 80px;
   position: fixed;
   top: 0;
@@ -425,11 +452,12 @@ margin-left: 75px;
   animation: 2s fadeInNav ease;
 }
 
-@media screen and (max-width: 670px) {
-  .mainnav {
-right:10px;
-  }
-}
+@media screen and (max-width: 1028px) {
+  .mainnav{
+right:2%;
+
+}}
+
 
 
 
