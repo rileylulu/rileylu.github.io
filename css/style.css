@@ -116,77 +116,57 @@ margin:130px auto;
 }
 
 
+@media screen and (max-width: 670px) {
+.social-media {
+font-size: 1em;
+padding-right: 3em;
+  }
+}
+
+
+
 
 
 .flexwrapperhero {
   display: flex;
   flex-direction: column;
   width:100%;
-  transform: translateY(-92%);
+  /* transform: translateY(-92%); */
 justify-content: center;
+position:relative;
+top:-250px;
 }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .flexwrapperhero {
-    transform: translateY(-70%);
+  top: -200px;
   }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 768px) {
   .flexwrapperhero {
-    transform: translateY(-60%);
-    width: 90%;
-  }
-}
-@media screen and (max-width: 880px) {
-  .flexwrapperhero {
-    transform: translateY(-55%);
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 779px) {
-  .flexwrapperhero {
-    transform: translateY(-80%);
-
-  }
-}
-
-@media screen and (max-width: 740px) {
-  .flexwrapperhero {
-    transform: translateY(-290px);
-
+  top: -260px;
   }
 }
 
 @media screen and (max-width: 670px) {
   .flexwrapperhero {
-    transform: translateY(-250px);
-
+top:-150px;
   }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 600px) {
   .flexwrapperhero {
-    transform: translateY(-100%);
-
+top:-200px;
   }
 }
-
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 550px) {
   .flexwrapperhero {
-    transform: translateY(-120%);
-
+top:-250px;
   }
 }
 
-@media screen and (max-width: 519px) {
-  .flexwrapperhero {
-    transform: translateY(-200%);
-
-  }
-}
 
 #headline {
   text-align: center;
@@ -202,35 +182,31 @@ h1 {
 
 }
 
-@media screen and (max-width: 1250px) {
-  h1 {
-    font-size: 4em;
-  }
-}
 
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 950px) {
   h1 {
     font-size: 3.5em;
-    margin-left: 2%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.5em;
-    margin-left: 5%;
+    margin-left: 50px;
 
   }}
 
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: 768px) {
     h1 {
       font-size: 2em;
-      margin-left: 5%;
+      margin-left: -20px;
     }
 
 }
 
+
+@media screen and (max-width: 519px) {
+h1 {
+font-size: 1.5em;
+
+  }
+}
 
 h1:after {
   content: '';
@@ -239,16 +215,31 @@ h1:after {
   background: black;
   position: absolute;
   bottom: 25px;
-margin-left: -20%;
+margin-left: -290px;
+}
+
+@media screen and (max-width: 950px) {
+  h1:after {
+    width:50px;
+    margin-left: -230px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   h1:after {
-    width:45px;
-    bottom:20px;
+    width:30px;
+    margin-left: -130px;
+    bottom:10px;
   }
+
 }
 
+@media screen and (max-width: 519px) {
+h1:after {
+margin-left: -100px;
+width:20px;
+  }
+}
 
 h1 span {
   display: inline-block;
@@ -281,7 +272,7 @@ h1 span {
 .intro {
   font-family: 'savoyregular',serif;
   font-size: 1.8em;
-margin-left: 7%;
+margin-left: 75px;
   width: 90%;
   letter-spacing: .05em;
   line-height: 137%;
@@ -291,16 +282,26 @@ margin-left: 7%;
 
 @media screen and (max-width: 1240px) {
   .intro {
-    width:95%;
+    width:90%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1028px) {
   .intro {
     width:80%;
-    margin-left: 15%;
+
   }
 }
+@media screen and (max-width: 768px) {
+  .intro {
+    width:75%;
 
+  }
+}
+@media screen and (max-width: 519px) {
+.intro  {
+  font-size: 1.3em;
+  }
+}
 
 /* button */
 .button {
@@ -345,16 +346,16 @@ margin-left: 7%;
     width: 30%;
   }
 }
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 620px) {
   .button {
     width: 37%;
     margin-left: 35%;
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 519px) {
   .button {
-    width: 43%;
+    width: 30%;
   }
 }
 .button a {
@@ -362,6 +363,12 @@ margin-left: 7%;
   text-decoration: none;
   font-size: 1.3rem;
   color: #000;
+}
+
+@media screen and (max-width: 519px) {
+.button a  {
+  font-size: 1em;
+  }
 }
 
 .button .mask {
@@ -416,6 +423,12 @@ margin-left: 7%;
   top: 0;
   z-index: 888;
   animation: 2s fadeInNav ease;
+}
+
+@media screen and (max-width: 670px) {
+  .mainnav {
+right:10px;
+  }
 }
 
 
@@ -711,7 +724,11 @@ h2 {
 }
 
 
+
 /* gallery */
+#projects {
+  margin-top: -150px;
+}
 .gallery {
   display: flex;
   justify-content: center;
@@ -720,28 +737,10 @@ h2 {
   width: 100%;
   height: 100%;
   font-size: 13px;
-  margin-top: -16%;
+
 
 }
 
-@media screen and (max-width: 1400px) {
-  .gallery {
-    margin-top: -10%;
-  }
-}
-
-
-@media screen and (max-width: 880px) {
-  .gallery {
-    margin-top: -12%;
-  }
-}
-
-  @media screen and (max-width: 670px) {
-    .gallery {
-      margin-top: -20%;
-    }
-}
 
 .grid {
   width: 90%;
