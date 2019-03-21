@@ -109,7 +109,7 @@ visibility: hidden;
 background-image: url('../images/mobile.png');
 background-repeat: no-repeat;
 background-size:cover;
-
+background-position: center;
 height: 100%;
 
 }
@@ -998,6 +998,12 @@ footer {
   justify-content: stretch;
 }
 
+@media screen and (max-width: 670px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
 h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -1030,6 +1036,14 @@ form {
   margin: 5%;
   width: 40%;
 }
+
+@media screen and (max-width: 670px) {
+  form {
+    width:80%;
+  }
+}
+
+
 
 .form-control {
   display: flex;
