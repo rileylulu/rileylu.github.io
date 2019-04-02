@@ -53,7 +53,8 @@ html {
 
 body {
   font-size: 1rem;
-  overflow-x: hidden;
+overflow-x: hidden;
+
 }
 
 .logo {
@@ -70,7 +71,7 @@ body {
 }
 
 header {
-  width:90%;
+  width:95%;
 }
 
 @media screen and (max-width: 670px) {
@@ -117,10 +118,11 @@ height: 100%;
 
 .social {
   float: right;
-margin:130px auto;
+margin:3% 5% 3% 0;
   /* padding-top: 15em; */
   display: flex;
   flex-direction: column;
+  align-items: center;
 
 
 }
@@ -179,15 +181,12 @@ top:-250px;
 
 @media screen and (max-width: 838px) {
   .flexwrapperhero {
-  top: -260px;
+  top: -160px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .flexwrapperhero {
-  top: -300px;
-  }
-}
+
+
 
 @media screen and (max-width: 670px) {
   .flexwrapperhero {
@@ -201,7 +200,9 @@ top:50px;
 
 #headline {
   text-align: center;
-  transform: translate(5%,-21%);
+  /* transform: translate(5%,-21%); */
+  margin-top: -5%;
+  margin-left: 5%;
 
 }
 
@@ -210,6 +211,7 @@ h1 {
   font-weight: 300;
   font-size: 4.5em;
   display: inline-block;
+  margin-bottom: 3%;
 
 }
 
@@ -245,7 +247,7 @@ h1:after {
   height: 2px;
   background: black;
   position: absolute;
-  bottom: 25px;
+  bottom: 70%;
 margin-left: -290px;
 }
 
@@ -260,7 +262,8 @@ margin-left: -290px;
   h1:after {
     width:30px;
     margin-left: -130px;
-    bottom:10px;
+    bottom:85%;
+
   }
 
 }
@@ -303,8 +306,9 @@ h1 span {
 .intro {
   font-family: 'savoyregular',serif;
   font-size: 1.8em;
-margin-left: 75px;
-  width: 90%;
+margin-left:5%;
+margin-right: 5%;
+
   letter-spacing: .05em;
   line-height: 137%;
   color:#696969;
@@ -319,7 +323,7 @@ margin-left: 75px;
 @media screen and (max-width: 1028px) {
   .intro {
     width:80%;
-
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -456,9 +460,10 @@ margin-left: 75px;
 
 /* navigation */
 .mainnav {
- right:3%;
+
   height: 80px;
-  position: fixed;
+
+
   top: 0;
   z-index: 888;
   animation: 2s fadeInNav ease;
@@ -504,12 +509,12 @@ right:-.3%;
 
 
 #nav-icon {
-  padding-top: 15em;
+
   width: 60px;
   height: 2em;
   position: relative;
   /* left: 5em; */
-  z-index: 2;
+  z-index: 200;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -598,7 +603,7 @@ right:-.3%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
-  z-index: 1;
+  z-index: 100;
   visibility: hidden;
   display: flex;
   align-items: center;
@@ -1097,6 +1102,11 @@ textarea {
   padding: .5rem;
   cursor: pointer;
   font-family: 'sovoy',serif;
+}
+
+.copyright {
+  width: 100%;
+  overflow: hidden;
 }
 
 /* footer */
