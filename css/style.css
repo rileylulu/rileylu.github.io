@@ -832,6 +832,12 @@ h2 {
     background-repeat: no-repeat;
   }
 
+.item:nth-of-type(2) {
+      background-image: url('../images/Cloud office mock up.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
 .item:after {
   content: '';
   position: absolute;
@@ -869,10 +875,11 @@ h2 {
   padding: 15px;
   color: #444;
   background: #fff;
-  text-transform: lowercase;
+
   letter-spacing: 1px;
   color: #828282;
   font-family: 'savoyregular',serif;
+  font-size: 1.4rem;
 }
 
 .details:before {
@@ -1005,7 +1012,7 @@ font-family: 'savoyregular', sans-serif;
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 670px) {
