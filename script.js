@@ -78,6 +78,44 @@ $(document).ready(function() {
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
 
+$('.summarytext p').waypoint(function() {
+
+  $('.summarytext').addClass('animated fadeInUp');
+}, {
+  offset: 'bottom-in-view'
+});
+
+$('.end p').waypoint(function() {
+
+  $('.end').addClass('animated fadeInUp');
+}, {
+  offset: 'bottom-in-view'
+});
+
+$('.problem').waypoint(function() {
+
+  $('.problem').addClass('animated slideInLeft');
+}, {
+  offset: 500
+});
+
+$('.solution').waypoint(function() {
+
+  $('.solution').addClass('animated slideInRight');
+}, {
+  offset: 500
+});
+
+
+const continuousElements = $('.surveysection li')
+for (var i = 0; i < continuousElements.length; i++) {
+  new Waypoint({
+    element: continuousElements[i],
+    handler: function() {
+      $('.surveysection li').addClass('animated fadeIn');
+    }
+  })
+}
 
 
 });

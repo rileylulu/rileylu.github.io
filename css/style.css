@@ -23,6 +23,16 @@
 }
 
 @font-face {
+  font-family: 'BwModelicabold';
+  src: url('../fonts/BwModelica-Bold.woff2') format('woff2'),
+    url('../fonts/BwModelica-Bold.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+@font-face {
   font-family: 'bambiregular';
   src: url('../fonts/bambi_regular-webfont.woff2') format('woff2'),
     url('../fonts/bambi_regular-webfont.woff') format('woff');
@@ -74,9 +84,7 @@ header {
   width:95%;
 }
 
-@media screen and (max-width: 670px) {
 
-}
 
 @media screen and (max-width: 670px) {
   .logo {
@@ -241,7 +249,7 @@ font-size: 1.5em;
   }
 }
 
-h1:after {
+.title:after {
   content: '';
   width: 60px;
   height: 2px;
@@ -252,14 +260,14 @@ margin-left: -290px;
 }
 
 @media screen and (max-width: 950px) {
-  h1:after {
+.title:after {
     width:50px;
     margin-left: -230px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  h1:after {
+.title:after {
     width:30px;
     margin-left: -130px;
     bottom:85%;
@@ -269,7 +277,7 @@ margin-left: -290px;
 }
 
 @media screen and (max-width: 519px) {
-h1:after {
+.title:after {
 margin-left: -100px;
 width:20px;
   }
