@@ -107,15 +107,22 @@ $('.solution').waypoint(function() {
 });
 
 
-const continuousElements = $('.surveysection li')
-for (var i = 0; i < continuousElements.length; i++) {
-  new Waypoint({
-    element: continuousElements[i],
-    handler: function() {
-      $('.surveysection li').addClass('animated fadeIn');
-    }
-  })
-}
+
+
+
+
+$('.thumbnail').on('click',function(){
+  const link = $(this).attr('src');
+$('#myModal').css('display','block');
+  $("#flowchart01").attr('src',link);
+  
+});
+
+
+
+$('.close').on('click',function(){
+  $('#myModal').css('display','none');
+})
 
 
 
