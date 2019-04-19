@@ -99,7 +99,11 @@ p {
   }
 }
 
-
+@media screen and (max-width: 768px) {
+  .projectstart{
+    height:100vh;
+  }
+}
 
 
 
