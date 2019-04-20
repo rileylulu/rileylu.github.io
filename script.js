@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
   function call() {
     $(this).toggleClass('open');
     $(".overlay").toggleClass("open");
@@ -115,7 +117,7 @@ $('.thumbnail').on('click',function(){
   const link = $(this).attr('src');
 $('#myModal').css('display','block');
   $("#flowchart01").attr('src',link);
-  
+
 });
 
 

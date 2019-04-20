@@ -68,6 +68,100 @@ overflow-x: hidden;
 }
 
 
+.lds-roller {
+
+  position: relative;
+
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+overflow: hidden;
+
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+
+
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #000;
+  margin: -3px 0 0 -3px;
+
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 p {
   font-family: 'savoyregular',serif;
   font-size: 1.7vw;
@@ -105,6 +199,11 @@ p {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .projectstart{
+    height:auto;
+  }
+}
 
 
 .project-introduction {
@@ -155,6 +254,12 @@ object-fit: contain;
 @media screen and (max-width: 768px) {
   .summarywrapper {
     margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .summarywrapper {
+    flex-direction: column;
   }
 }
 
@@ -247,6 +352,11 @@ letter-spacing: 1.5px;
   }
 }
 
+@media screen and (max-width: 450px) {
+  .officeimage{
+    width:100%;
+  }
+}
 
 
 
@@ -281,6 +391,12 @@ height:100vh;
 position: relative;
 margin-bottom: 7%;
 opacity: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .summarytext{
+    height:80vh;
+  }
 }
 
 
@@ -362,20 +478,21 @@ hr {
   margin-top: 2%;
 }
 
-ul li {
+.listcontainer li {
   font-family: 'savoyregular',serif;
   font-size: 1.7vw;
-  padding-bottom: 4%;
+  padding-bottom: 5%;
 color:rgba(0,0,0,.7);
   letter-spacing: 1.5px;
 
 }
 
 @media screen and (max-width: 768px) {
-ul li {
+.listcontainer li {
     font-size: 2.2vw;
   }
 }
+
 
 
 
@@ -537,6 +654,12 @@ height:200px;
 text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .icons img{
+    width:8vw;
+  }
+  }
+
 .analysiscontainer {
   background-color: rgba(192, 235, 106, 0.46);
   flex-basis: 70%;
@@ -591,11 +714,13 @@ text-align: left;
 .result img {
   float:left;
 
+
 }
 
 @media screen and (max-width: 1024px) {
   .result img {
   width:4vw;
+  height:50%;
   }
 }
 
@@ -605,7 +730,15 @@ text-align: left;
   letter-spacing: 1.5px;
   line-height: 150%;
     color:rgba(0,0,0,.7);
+    display:flex;
+  padding-bottom: 5%;
+}
 
+@media screen and (max-width: 450px) {
+  .result {
+  padding-top: 0;
+  padding-bottom: 0;
+  }
 }
 
 .result p{
@@ -621,6 +754,8 @@ text-align: left;
     padding-left: 0;
   }
 }
+
+
 
 .persona {
   height:100vh;
@@ -789,6 +924,12 @@ transform: scale(1.2);
 
 }
 
+@media only screen and (max-width: 1024px){
+  .brand img {
+    width: 4vw;
+  }
+}
+
 .brand {
   display:inline-block;
   width:25%;
@@ -830,6 +971,12 @@ letter-spacing: 1.5px;
   height:auto;
 }
 
+.gif {
+object-fit:cover;
+max-width: 100%;
+  height:auto;
+}
+
 .testing {
   background-color: rgba(192, 235, 106, 0.46);
   padding-bottom: 5%;
@@ -837,4 +984,16 @@ letter-spacing: 1.5px;
 
 .testing p {
   margin-bottom: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .conclusion {
+margin:10% 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .conclusion{
+    flex-direction: column;
+  }
 }
