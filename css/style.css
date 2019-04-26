@@ -846,6 +846,12 @@ h2 {
       background-repeat: no-repeat;
     }
 
+    .item:nth-of-type(6) {
+          background-image: url('../images/azure spa.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
 .item:after {
   content: '';
   position: absolute;
