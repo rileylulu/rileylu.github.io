@@ -15,8 +15,9 @@
     <title>Cloud office design project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
-    <main>
+  <body onload="myFunction()">
+      <div class="loader"></div>
+    <main class="animate-bottom">
 <section class="flexwrappercolumn">
   <section class="flexwrapperrow projectstart">
     <div class="project-introduction animated fadeInLeft ">
@@ -302,6 +303,17 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+  let timeoutID;
+
+  function myFunction() {
+    timeoutID = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.querySelector(".loader").style.display = "none";
+    document.querySelector(".animate-bottom").style.display = "block";
+  }
+
 </script>
   </body>
 </html>

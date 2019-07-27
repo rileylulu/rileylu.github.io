@@ -59,7 +59,55 @@ html {
 }
 
 
+.loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.loader:before {
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 3px solid;
+  border-color: transparent transparent #000000 transparent;
+  border-radius: 100%;
+  animation: 1s spin ease infinite;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+  display:none;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
 
 body {
   font-size: 1rem;
