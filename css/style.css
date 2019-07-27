@@ -834,6 +834,12 @@ h2 {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   cursor: pointer;
 }
+
+.item:nth-of-type(1) {
+    background-image: url('../images/businesscarddisplay.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 .item:nth-of-type(3) {
     background-image: url('../images/plantlife.gif');
     background-size: contain;
