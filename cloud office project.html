@@ -302,7 +302,7 @@
 </main>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init();
+
   let timeoutID;
 
   function myFunction() {
@@ -312,8 +312,11 @@
   function showPage() {
     document.querySelector(".loader").style.display = "none";
     document.querySelector(".animate-bottom").style.display = "block";
+    AOS.init({
+       startEvent: 'DOMContentLoaded',
+    });
   }
-
+AOS.refresh();
 </script>
   </body>
 </html>
