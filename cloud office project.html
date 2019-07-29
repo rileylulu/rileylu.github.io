@@ -312,9 +312,7 @@
   function showPage() {
     document.querySelector(".loader").style.display = "none";
     document.querySelector(".animate-bottom").style.display = "block";
-    AOS.init({
-       startEvent: 'DOMContentLoaded',
-    });
+    AOS.init();
   }
 AOS.refresh();
 </script>
