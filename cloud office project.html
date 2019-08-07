@@ -306,9 +306,12 @@
   window.addEventListener('load',showPage());
 
   function showPage() {
+    setTimeout(function(){
     document.querySelector(".loader").style.display = "none";
     document.querySelector(".animate-bottom").style.display = "block";
     AOS.init();
+  },3000);
+
   }
 
 </script>
