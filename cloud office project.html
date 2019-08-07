@@ -15,7 +15,7 @@
     <title>Cloud office design project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body onload="myFunction()">
+  <body>
       <div class="loader"></div>
     <main class="animate-bottom">
 <section class="flexwrappercolumn">
@@ -303,11 +303,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 
-  let timeoutID;
-
-  function myFunction() {
-    timeoutID = setTimeout(showPage, 30);
-  }
+  window.addEventListener('load',showPage());
 
   function showPage() {
     document.querySelector(".loader").style.display = "none";
