@@ -1,6 +1,19 @@
 $(document).ready(function() {
+  function move() {
+    let width = 10;
+    const update = setInterval(frame, 150);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(update);
+        $(".preload").css('display','none');
+      } else {
+        width++; 
+        $("#fill").css('width',  width + '%'); 
+      }
+    }
+  }
 
-
+  $( window ).on( "load", move );
 
   function call() {
     $(this).toggleClass('open');
