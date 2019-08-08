@@ -1,17 +1,22 @@
 $(document).ready(function() {
   function move() {
+   
     let width = 10;
     const update = setInterval(frame, 100);
     function frame() {
       if (width >= 100) {
         clearInterval(update);
         $(".preload").css('display','none');
+        sessionStorage.setItem('dontLoad', 'true');
+        
       } else {
         width++; 
         $("#fill").css('width',  width + '%'); 
       }
-    }
+    
   }
+  
+}
 
   $( window ).on( "load", move );
 
