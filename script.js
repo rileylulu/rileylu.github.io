@@ -1,7 +1,7 @@
 $(document).ready(function() {
   function move() {
     let width = 10;
-    const update = setInterval(frame, 150);
+    const update = setInterval(frame, 100);
     function frame() {
       if (width >= 100) {
         clearInterval(update);
