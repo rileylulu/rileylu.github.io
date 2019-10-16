@@ -1,0 +1,39 @@
+ a {
+  text-decoration: none;
+  color:rgba(0,0,0,.7);
+  font-size: 1.4vw;
+  font-family: 'savoyregular',serif;
+margin-top: 4%;
+display: inline-block;
+letter-spacing: 1.5px;
+ 
+}
+
+@media screen and (max-width: 768px) {
+ a {
+    font-size:1.7vw;
+  }
+}
+
+a::before {
+	color: #000;
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 0;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	-webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+a:hover::before,
+a:focus::before {
+	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	opacity: 1;
+}
+
