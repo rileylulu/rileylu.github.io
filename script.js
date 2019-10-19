@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(window).on('load', function() {
   function move() {
    
     let width = 10;
@@ -6,19 +7,22 @@ $(document).ready(function() {
     function frame() {
       if (width >= 100) {
         clearInterval(update);
-        $(".preload").css('display','none');
-        sessionStorage.setItem('dontLoad', 'true');
-        
+        $(".preload").css('display','none');  
       } else {
         width++; 
         $("#fill").css('width',  width + '%'); 
-      }
-    
-  }
-  
+      }   
+    }  
 }
+if ( ! sessionStorage.getItem( 'doNotShow' ) ) {
+  sessionStorage.setItem( 'doNotShow', true );
+  move();
+} else {
+ $ ('.preload').hide();
+}
+  });
 
-  $( window ).on( "load", move );
+  
 
   function call() {
     $(this).toggleClass('open');

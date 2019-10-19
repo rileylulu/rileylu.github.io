@@ -334,25 +334,26 @@ margin-left: -580px;
 
 @media screen and (max-width: 950px) {
 .title:after {
-    width:50px;
-    margin-left: -230px;
+    width:30px;
+    margin-left: -450px;
   }
 }
 
 @media screen and (max-width: 768px) {
 .title:after {
-    width:30px;
-    margin-left: -130px;
+    width:20px;
+    margin-left: -260px;
     bottom:85%;
-
+    height:1px;
   }
 
 }
 
 @media screen and (max-width: 519px) {
 .title:after {
-margin-left: -100px;
-width:20px;
+margin-left: -195px;
+width:15px;
+height:1px;
   }
 }
 
